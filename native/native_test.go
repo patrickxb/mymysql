@@ -3,7 +3,7 @@ package native
 import (
 	"bytes"
 	"fmt"
-	"github.com/ziutek/mymysql/mysql"
+	"github.com/patrickxb/mymysql/mysql"
 	"io/ioutil"
 	"os"
 	"reflect"
@@ -786,7 +786,7 @@ func TestSendLongData(t *testing.T) {
 	}
 
 	// Send long data from io.Reader twice
-	filename := "_test/github.com/ziutek/mymysql/native.a"
+	filename := "_test/github.com/patrickxb/mymysql/native.a"
 	file, err := os.Open(filename)
 	checkErr(t, err, nil)
 	checkErr(t, ins.SendLongData(1, file, 128*1024), nil)

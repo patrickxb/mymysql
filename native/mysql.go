@@ -4,7 +4,7 @@ package native
 import (
 	"bufio"
 	"fmt"
-	"github.com/ziutek/mymysql/mysql"
+	"github.com/patrickxb/mymysql/mysql"
 	"io"
 	"net"
 	"reflect"
